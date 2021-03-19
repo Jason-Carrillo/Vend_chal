@@ -7,8 +7,14 @@ public class vendingChall {
     static char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
     
     public static void rowSetter(int x){
-        for(int i = 0; i <= x; i++){
+
+        for(int i = -1; i <= x; i++){
+
+            if(i == -1) {
+            System.out.print("+");
+            } else {
             System.out.print(alphabet[i]);
+        }
         }
         System.out.println();
     }
