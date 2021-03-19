@@ -26,7 +26,7 @@ public class vendingChall {
     }
     public static void main(String[] args) {
 
-        rowColumnPrinter(8, 9);
+        rowColumnPrinter(6, 5);
 
         System.out.println("Please enter Row (Letter) for desired candy.");
         System.out.println("Please enter Column (Number) for desired candy.");
