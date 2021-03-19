@@ -1,6 +1,6 @@
 public class vendingChall {
 
-    public void roewSetter(int x){
+    public void rowSetter(int x){
         for(int i = 0; i <= x; i++){
 
         }
