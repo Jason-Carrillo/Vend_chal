@@ -3,14 +3,14 @@ import jdk.internal.joptsimple.internal.Rows;
 public class vendingChall {
 
     public static void rowSetter(int x){
-        for(int i = 0; i <= x; i++){
+        for(int i = 1; i <= x; i++){
             System.out.print(i);
         }
         System.out.println();
     }
 
     public static void columnSetter(int x){
-        for(int i = 0; i <= x; i++){
+        for(int i = 1; i <= x; i++){
             System.out.println(i);
         }
         System.out.println();
