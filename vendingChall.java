@@ -5,6 +5,14 @@ import jdk.internal.joptsimple.internal.Rows;
 public class vendingChall {
 
     static char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+    static int rows = 4;
+
+    static int columns = 8;
+
+    static ArrayList<Object> machineBoard;
+
+
     
     public static void rowSetter(int x){
 
@@ -31,6 +39,10 @@ public class vendingChall {
         columnSetter(y);
     }
     public static void main(String[] args) {
+
+        for(int i = 0; i <= rows; i++){
+            machineBoard.add({" ", " | ", " "});
+        };
 
         rowColumnPrinter(6, 5);
 
