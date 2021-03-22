@@ -106,6 +106,7 @@ public class vendingChall extends JFrame{
             }
             
         });
+        JButton buttonPurchase = new JButton("Complete Purchase");
 
     }
 
