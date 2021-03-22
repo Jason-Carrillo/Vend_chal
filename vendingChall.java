@@ -1,6 +1,7 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.event.KeyEvent;
@@ -134,6 +135,10 @@ public class vendingChall extends JFrame{
 
         });
 
+        checkoutPanel.add(label1, BorderLayout.PAGE_START);
+        checkoutPanel.add(label2, BorderLayout.PAGE_START);
+        checkoutPanel.add(textAmount, BorderLayout.LINE_END);
+      
     }
 
     private Item hasPosition(String position){
