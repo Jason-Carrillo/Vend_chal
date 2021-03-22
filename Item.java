@@ -4,11 +4,11 @@ public class Item extends JLabel{
     private final String name;
     private final String price;
     private String position;
-    private int amount;
+    private int quantity;
 
-    public Item(String name, int amount, String price) {
+    public Item(String name, int quantity, String price) {
         this.name = name;
-        this.amount = amount;
+        this.quantity = quantity;
         this.price = price;
 
         
@@ -17,15 +17,23 @@ public class Item extends JLabel{
 
     public String getName(){
         return name;
-    };
+    }
 
     public String getPrice(){
         return price;
-    };
+    }
 
-    public int getAmount(){
-        return amount;
-    };
+    public int getquantity(){
+        return quantity;
+    }
+
+    public void updateQuantity(int quantity) {
+        this.quantity = quantity;
+    }    
+
+    public String toString() {
+        return (name + "( " + quantity + ")\nPrice: " + price );
+    }
 
 
 }
