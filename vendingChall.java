@@ -20,7 +20,11 @@ public class vendingChall extends JFrame{
 
     JButton buttonCheckout;
     
-    
+    public vendingChall() {
+        setTitle("MS3 Vending Machine");
+        setSize(1000, 600);
+    }
+
     public static void main(String[] args) {
 
         for(int i = 0; i <= rows; i++){
