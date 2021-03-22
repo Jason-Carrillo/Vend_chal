@@ -174,6 +174,9 @@ public class vendingChall extends JFrame{
             }
         }
 
+        itemsPanel.revalidate();
+        itemsPanel.repaint();
+
     }
 
 
