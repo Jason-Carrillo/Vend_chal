@@ -1,7 +1,6 @@
-import java.awt.Color;
+import java.awt.*;
 
-import javax.swing.BorderFactory;
-import javax.swing.JLabel;
+import javax.swing.*;
 
 public class Item extends JLabel{
     private final String name;

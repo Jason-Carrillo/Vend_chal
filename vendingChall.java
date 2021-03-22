@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -173,10 +175,8 @@ public class vendingChall extends JFrame{
 
             }
         }
-
         itemsPanel.revalidate();
         itemsPanel.repaint();
-
     }
 
 
