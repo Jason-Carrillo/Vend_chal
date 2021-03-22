@@ -4,6 +4,7 @@ import org.json.JSONObject;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
+import java.awt.Insets;
 import java.awt.event.KeyEvent;
 import java.awt.event.*;
 import java.io.BufferedReader;
@@ -24,6 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.text.MaskFormatter;
+import java.awt.GridBagLayout;
 
 
 public class vendingChall extends JFrame{
@@ -53,7 +55,7 @@ public class vendingChall extends JFrame{
 
     private void initializeUI(){
         JButton btnLoad = new JButton("Load new items");
-        btnLoad.addActionListener(e -> loadNewitems());
+        btnLoad.addActionListener(e -> loadNewItems());
 
         setLayout(new BorderLayout(5, 5));
 
@@ -150,10 +152,10 @@ public class vendingChall extends JFrame{
         checkoutPanel.setVisible(true);
     }
 
-    private Item hasPosition(String position){
-        for(Item item : items){
-            if(item.getPosition().equalsIgnoreCase(position))
-            return item;
+    private Item hasPosition(String position) {
+        for (Item item : items) {
+            if (item.getPosition().equalsIgnoreCase(position))
+                return item;
         }
         return null;
     }
@@ -162,37 +164,33 @@ public class vendingChall extends JFrame{
         return item.getquantity() != 0;
     }
 
-    private void loadNewitems(){
+    private void loadNewItems() {
         JFileChooser fileChooser = new JFileChooser();
-
+        
         fileChooser.setAcceptAllFileFilterUsed(false);
         fileChooser.addChoosableFileFilter(new FileFilter() {
-
+    
             @Override
             public boolean accept(File file) {
                 if (file.isDirectory())
-                return true;
-
+                    return true;
                 return file.getName().toLowerCase(Locale.ROOT).endsWith(".json");
             }
-
             @Override
             public String getDescription() {
                 return "JSON file (*.json)";
             }
         });
-
         String filename;
-
-        int ret  = fileChooser.showOpenDialog(null);
-        if(ret == JFileChooser.APPROVE_OPTION){
+    
+        int ret = fileChooser.showOpenDialog(null);
+        if (ret == JFileChooser.APPROVE_OPTION) {
+          
             filename = fileChooser.getSelectedFile().getName();
         } else {
             return;
         }
     
-
-        // Create this method 
         loadJSONFile(filename);
     }
 
@@ -252,7 +250,7 @@ public class vendingChall extends JFrame{
         String[] rowLabel = new String[configRow];
 
         //Columns
-        for(int i; i < configColumn; i++){
+        for(int i = 0; i < configColumn; i++){
             columnLabel[i] = (i + 1) + "";
         }
 
