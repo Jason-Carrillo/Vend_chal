@@ -125,6 +125,13 @@ public class vendingChall extends JFrame{
 
             item.updateQuantity(item.getquantity() - 1);
 
+            double remainder = enteredAmount - itemAmount;
+            JOptionPane.showMessageDialog(this, 
+                item.getName() + " was purchased!" +
+                "\n your change is : $ " + String.format("%.2f", remainder));
+
+                loadToUI();
+
         });
 
     }
