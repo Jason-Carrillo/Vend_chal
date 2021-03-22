@@ -45,6 +45,7 @@ public class vendingChall extends JFrame{
         setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        initializeUI();
         setVisible(true);
 
     }
@@ -162,14 +163,14 @@ public class vendingChall extends JFrame{
         JFileChooser fileChooser = new JFileChooser();
 
         fileChooser.setAcceptAllFileFilterUsed(false);
-        fileChooser.addChoosableFileFilter(new FileFilter(){
+        fileChooser.addChoosableFileFilter(new FileFilter() {
 
             @Override
             public boolean accept(File file) {
                 if (file.isDirectory())
                 return true;
 
-                return file.getName().toLowerCase()(Locale.ROOT).endsWith(".json");
+                return file.getName().toLowerCase(Locale.ROOT).endsWith(".json");
             }
 
             @Override
