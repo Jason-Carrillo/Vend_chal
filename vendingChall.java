@@ -3,6 +3,7 @@ import org.json.JSONObject;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
@@ -19,6 +20,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.text.MaskFormatter;
 
 
@@ -89,6 +91,21 @@ public class vendingChall extends JFrame{
         JFrame checkoutPanel = new JFrame();
         JLabel label1 = new JLabel("Selected item: " + item.toString());
         JLabel label2 = new JLabel("Enter Money USD");
+        JTextField textAmount = new JTextField(10);
+        textAmount.addKeyListener(new keyAdapter() {
+
+            @Override
+            public void keyTyped(KeyEvent e){
+                if(e.getKeyChar() == '.')
+                return;
+
+                if(!Character.isDigit(e.getKeyChar())) {
+                    e.consume();
+                }
+
+            }
+            
+        });
 
     }
 
