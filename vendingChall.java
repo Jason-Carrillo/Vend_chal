@@ -23,6 +23,11 @@ public class vendingChall extends JFrame{
     public vendingChall() {
         setTitle("MS3 Vending Machine");
         setSize(1000, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setVisible(true);
+
+
     }
 
     public static void main(String[] args) {
