@@ -50,6 +50,8 @@ public class Item extends JLabel{
         setText(toHtmlString());
     }
 
-
+    public String getPosition(){
+        return position;
+    }
 
 }
