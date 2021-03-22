@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.event.KeyEvent;
+import java.awt.event.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
@@ -73,8 +74,9 @@ public class vendingChall extends JFrame{
 
     private void checkoutItem() {
         
-        if(items.isEmpty())
+        if(items.isEmpty()){
         return;
+    }
 
         if(formatted.getText().isEmpty() || formatted.getText().isBlank()){
             JOptionPane.showMessageDialog(this, "Please enter a position to purchase item");
@@ -94,20 +96,21 @@ public class vendingChall extends JFrame{
         JLabel label1 = new JLabel("Selected item: " + item.toString());
         JLabel label2 = new JLabel("Enter Money USD");
         JTextField textAmount = new JTextField(10);
-        textAmount.addKeyListener(new keyAdapter() {
+        textAmount.addKeyListener(new KeyAdapter() {
 
             @Override
             public void keyTyped(KeyEvent e){
-                if(e.getKeyChar() == '.')
+                if(e.getKeyChar() == '.'){
                 return;
+                }
 
                 if(!Character.isDigit(e.getKeyChar())) {
                     e.consume();
                 }
-
             }
-            
         });
+
+
         JButton buttonPurchase = new JButton("Complete Purchase");
         buttonPurchase.addActionListener(e -> {
             if(textAmount.getText().isEmpty() || textAmount.getText().isBlank()){
@@ -116,7 +119,7 @@ public class vendingChall extends JFrame{
             }
 
             double enteredAmount = Double.parseDouble(textAmount.getText());
-            double itemAmount = Double.parseDouble(item.getPrice().replaceAll("\\$", ""));
+            double itemAmount = Double.parseDouble(item.getPrice().replace("\\$", ""));
 
             if(enteredAmount < itemAmount){
                 JOptionPane.showMessageDialog(checkoutPanel, "Insufficient funds to purchase item");
