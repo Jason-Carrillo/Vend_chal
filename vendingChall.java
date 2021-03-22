@@ -1,5 +1,8 @@
+import java.io.File;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -27,18 +30,32 @@ public class vendingChall extends JFrame{
         setLocationRelativeTo(null);
         setVisible(true);
 
-
     }
 
-    public static void main(String[] args) {
-
-        for(int i = 0; i <= rows; i++){
-            machineBoard.add({" ", " | ", " "});
-        };
-
-        rowColumnPrinter(6, 5);
-
-        System.out.println("Please enter Row (Letter) for desired candy.");
-        System.out.println("Please enter Column (Number) for desired candy.");
+    private void initializeUI(){
+        JButton btnLoad = new JButton("Load new items");
+        btnLoad.addActionListener(e -> loadNewitems());
     }
+
+    private void loadNewitems(){
+        JFileChooser fileChooser = new JFileChooser();
+
+        fileChooser.setAcceptAllFileFilterUsed(false);
+        fileChooser.addChoosableFileFilter(new FileFilter(){
+
+            @Override
+            public boolean accept(File file) {
+                if (file.isDirectory())
+                return true;
+
+                return file.getName().toLowerCase()(Locale.ROOT).endsWith(".json");
+            }
+
+            @Override
+            public String getDescription() {
+                return "JSON file (*.json)";
+            }
+        });
+    }
+
 }
