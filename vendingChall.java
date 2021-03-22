@@ -85,6 +85,11 @@ public class vendingChall extends JFrame{
         if(!itemIsAvailable(item)) {
             JOptionPane.showMessageDialog(this, "Currently out of Stock");
         }
+
+        JFrame checkoutPanel = new JFrame();
+        JLabel label1 = new JLabel("Selected item: " + item.toString());
+        JLabel label2 = new JLabel("Enter Money USD");
+
     }
 
     private Item hasPosition(String position){
