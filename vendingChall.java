@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
@@ -18,8 +19,8 @@ public class vendingChall extends JFrame{
 
     ArrayList<Item> items = new ArrayList<>();
 
-    ArrayList<Jlabel> itemsList = new ArrayList<>();
-
+    ArrayList<JLabel> itemsList = new ArrayList<>();
+    
     JPanel itemsPanel = new JPanel();
 
     JFormattedTextField formatted;
@@ -138,6 +139,12 @@ public class vendingChall extends JFrame{
         for(int i = 0; i < configRow; i++){
             rowLabel[i] = (i + 1) + "";
         }
+
+        for (JLabel label : itemsList) {
+            itemsPanel.remove(label);
+        }
+
+        itemsList.clear();
 
     }
 
