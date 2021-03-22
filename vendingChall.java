@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -119,7 +120,9 @@ public class vendingChall extends JFrame{
             loadToUI()
 
             System.out.println("Items: " + items.size() + " Row x Column: " + configRow + " x " + configColumn);
-        
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
         }
 
 
