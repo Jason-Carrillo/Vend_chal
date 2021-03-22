@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -43,6 +44,14 @@ public class vendingChall extends JFrame{
     private void initializeUI(){
         JButton btnLoad = new JButton("Load new items");
         btnLoad.addActionListener(e -> loadNewitems());
+
+        setLayout(new BorderLayout(5, 5));
+
+        try{
+            formatted = new JFormattedTextField(new MaskFormatter("?#"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     private void loadNewitems(){
