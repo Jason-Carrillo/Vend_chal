@@ -142,8 +142,8 @@ public class vendingChall extends JFrame{
 
         checkoutPanel.setTitle("Purchase Item");
         checkoutPanel.setSize(500, 100);
-    
-  
+        checkoutPanel.setLocationRelativeTo(null);
+
       
     }
 
