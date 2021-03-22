@@ -116,6 +116,15 @@ public class vendingChall extends JFrame{
             double enteredAmount = Double.parseDouble(textAmount.getText());
             double itemAmount = Double.parseDouble(item.getPrice().replaceAll("\\$", ""));
 
+            if(enteredAmount < itemAmount){
+                JOptionPane.showMessageDialog(checkoutPanel, "Insufficient funds to purchase item");
+                return;
+            }
+
+            checkoutPanel.setVisible(false);
+
+            item.updateQuantity(item.getquantity() - 1);
+
         });
 
     }
