@@ -129,8 +129,14 @@ public class vendingChall extends JFrame{
         String[] columnLabel = new String[configColumn];
         String[] rowLabel = new String[configRow];
 
+        //Columns
         for(int i; i < configColumn; i++){
             columnLabel[i] = (i + 1) + "";
+        }
+
+        //Rows
+        for(int i = 0; i < configRow; i++){
+            rowLabel[i] = (i + 1) + "";
         }
 
     }
