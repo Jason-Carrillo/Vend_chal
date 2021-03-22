@@ -107,6 +107,16 @@ public class vendingChall extends JFrame{
             
         });
         JButton buttonPurchase = new JButton("Complete Purchase");
+        buttonPurchase.addActionListener(e -> {
+            if(textAmount.getText().isEmpty() || textAmount.getText().isBlank()){
+                JOptionPane.showMessageDialog(checkoutPanel, "Please enter funds to purchase item");
+                return;
+            }
+
+            double enteredAmount = Double.parseDouble(textAmount.getText());
+            double itemAmount = Double.parseDouble(item.getPrice().replaceAll("\\$", ""));
+
+        });
 
     }
 
