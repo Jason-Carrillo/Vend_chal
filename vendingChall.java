@@ -5,10 +5,12 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -76,6 +78,9 @@ public class vendingChall extends JFrame{
         }
 
         Item item = hasPosition(formatted.getText());
+        if(item == null) {
+            JOptionPane.showMessageDialog(this, "No item availale at this position");
+        }
     }
 
     private Item hasPosition(String position){
