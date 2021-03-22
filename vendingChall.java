@@ -1,6 +1,7 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,6 +16,7 @@ import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.text.MaskFormatter;
 
 
 public class vendingChall extends JFrame{
@@ -52,6 +54,14 @@ public class vendingChall extends JFrame{
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        formatted.setPreferredSize(new Dimension(200, 25));
+
+        buttonCheckout = new JButton("Checkout");
+
+        //TODO add checkoutItem() method
+        buttonCheckout.addActionListener(e -> checkoutItem());
+
     }
 
     private void loadNewitems(){
