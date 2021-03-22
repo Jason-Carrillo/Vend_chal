@@ -1,3 +1,6 @@
+import java.awt.Color;
+
+import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 
 public class Item extends JLabel{
@@ -11,8 +14,11 @@ public class Item extends JLabel{
         this.quantity = quantity;
         this.price = price;
 
+        setText(toHtmlString());
         
+        setHorizontalAlignment(JLabel.CENTER);
 
+        setBorder(BorderFactory.createLineBorder(Color.CYAN, 1));
     }
 
     public String getName(){
@@ -34,6 +40,17 @@ public class Item extends JLabel{
     public String toString() {
         return (name + "( " + quantity + ")\nPrice: " + price );
     }
+
+    public String toHtmlString(){
+        //Double check for formatting issues. If there are errors
+        return ("<html><p style='text-align:center'>" + name + " (" + quantity + ")<br>Price: " + price + "<br>Position: " + position + "</p></html>");
+    }
+
+    public void setPosition(String position){
+        this.position = position;
+        setText(toHtmlString());
+    }
+
 
 
 }
