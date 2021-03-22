@@ -15,6 +15,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.text.MaskFormatter;
 
@@ -62,6 +63,17 @@ public class vendingChall extends JFrame{
         //TODO add checkoutItem() method
         buttonCheckout.addActionListener(e -> checkoutItem());
 
+    }
+
+    private void checkoutItem() {
+        
+        if(items.isEmpty())
+        return;
+
+        if(formatted.getText().isEmpty() || formatted.getText().isBlank()){
+            JOptionPane.showMessageDialog(this, "Please enter a position to purchase item")
+            return;
+        }
     }
 
     private void loadNewitems(){
