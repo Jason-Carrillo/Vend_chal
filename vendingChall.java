@@ -1,3 +1,4 @@
+import java.awt.GridBagConstraints;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -145,6 +146,33 @@ public class vendingChall extends JFrame{
         }
 
         itemsList.clear();
+
+        itemsPanel.setLayout(new GridBagLayout());
+
+        itemsPanel.validate();
+
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.fill = GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new Insets(2, 2, 2, 2);
+
+        int itemIndex = 0;
+        for(int row = 0; row < configRow; row++){
+            for(int col = 0; row < configColumn;  col++){
+                gridBagConstraints.gridy = row;
+                gridBagConstraints.gridx = col;
+
+                if(itemIndex < items.size()){
+
+                    items.get(itemIndex).setPosition(rowLabel[row] + columnLabel[col]);
+
+                    itemsList.add(items.get(itemIndex));
+
+                    itemsPanel.add(items.get(itemIndex), gridBagConstraints);
+                    itemIndex++;
+                }
+
+            }
+        }
 
     }
 
