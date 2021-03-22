@@ -117,19 +117,23 @@ public class vendingChall extends JFrame{
             this.items.addAll(items);
 
             //TODO- create this method tha twill load items to the ui.
-            loadToUI()
+            loadToUI();
 
             System.out.println("Items: " + items.size() + " Row x Column: " + configRow + " x " + configColumn);
         } catch(IOException e) {
             e.printStackTrace();
         }
-        }
-
-
     }
 
+    private void loadToUI() {
+        String[] columnLabel = new String[configColumn];
+        String[] rowLabel = new String[configRow];
 
+        for(int i; i < configColumn; i++){
+            columnLabel[i] = (i + 1) + "";
+        }
 
+    }
 
 
 }
