@@ -71,9 +71,23 @@ public class vendingChall extends JFrame{
         return;
 
         if(formatted.getText().isEmpty() || formatted.getText().isBlank()){
-            JOptionPane.showMessageDialog(this, "Please enter a position to purchase item")
+            JOptionPane.showMessageDialog(this, "Please enter a position to purchase item");
             return;
         }
+
+        Item item = hasPosition(formatted.getText());
+    }
+
+    private Item hasPosition(String position){
+        for(Item item : items){
+            if(item.getPosition().equalsIgnoreCase(position))
+            return item;
+        }
+        return null;
+    }
+
+    private boolean itemIsAvailable(Item item) {
+        return item.getquantity() != 0;
     }
 
     private void loadNewitems(){
