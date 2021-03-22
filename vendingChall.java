@@ -138,6 +138,10 @@ public class vendingChall extends JFrame{
         checkoutPanel.add(label1, BorderLayout.PAGE_START);
         checkoutPanel.add(label2, BorderLayout.LINE_START);
         checkoutPanel.add(textAmount, BorderLayout.LINE_END);
+        checkoutPanel.add(buttonPurchase, BorderLayout.PAGE_END);
+
+        checkoutPanel.setTitle("Purchase Item");
+  
       
     }
 
