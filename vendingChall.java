@@ -81,6 +81,10 @@ public class vendingChall extends JFrame{
         if(item == null) {
             JOptionPane.showMessageDialog(this, "No item availale at this position");
         }
+
+        if(!itemIsAvailable(item)) {
+            JOptionPane.showMessageDialog(this, "Currently out of Stock");
+        }
     }
 
     private Item hasPosition(String position){
