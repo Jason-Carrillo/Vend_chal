@@ -21,7 +21,7 @@ When loading new items a new windows opens up a window to allow a user to select
 Once a JSON file is selected the window will close, and display the JSON file in a row/column format.
 <img width="795" alt="Screen Shot 2021-03-23 at 1 25 43 AM" src="https://user-images.githubusercontent.com/68563183/112109651-74b01d00-8b77-11eb-8029-ef98c1badf70.png">
 
-A user can purchase an item by entering the items position (Letter for the Row, and Number for the Column)
+A user can purchase an item by entering the items position (Letter for the Row, and Number for the Column)<br>
 A new window will prompt the user to enter money for the item.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 35 30 AM" src="https://user-images.githubusercontent.com/68563183/112110095-0f106080-8b78-11eb-8b25-283d67db17c3.png">
 
