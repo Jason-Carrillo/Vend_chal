@@ -31,9 +31,11 @@ Once Sufficient funds are entered the page will give the user the purchased item
 The window will close, and reduce the purchased items amount available per transaction.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 26 43 AM" src="https://user-images.githubusercontent.com/68563183/112110316-572f8300-8b78-11eb-890a-33ddd74ec794.png">
 
+If an item is currently out of stock, a window will let the user know.
+<img width="794" alt="Screen Shot 2021-03-23 at 1 50 07 AM" src="https://user-images.githubusercontent.com/68563183/112111655-1c2e4f00-8b7a-11eb-8f38-a8c2d44f84b7.png">
+
 If a number lower than the price of the item is entered, the window will display alerting insufficient funds.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 26 21 AM" src="https://user-images.githubusercontent.com/68563183/112110337-5e569100-8b78-11eb-9d1f-13bb07a5ee55.png">
 
 If a position that doesn't contain an item is selected an alert will tell the user there is no item at that position.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 26 55 AM" src="https://user-images.githubusercontent.com/68563183/112110342-61518180-8b78-11eb-9daa-fc6098f52836.png">
-
