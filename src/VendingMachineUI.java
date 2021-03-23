@@ -124,7 +124,7 @@ public class VendingMachineUI extends JFrame {
     }
     private void loadNewItems() {
         JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setCurrentDirectory(new File("/Users/jason/Desktop/IdeaProjects/remainderStyle/"));
+        fileChooser.setCurrentDirectory(new File("/Users/jason/IdeaProjects/vendingChall"));
         fileChooser.setAcceptAllFileFilterUsed(false);
         fileChooser.addChoosableFileFilter(new FileFilter() {
             @Override
