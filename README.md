@@ -92,7 +92,7 @@ Example: Loading a large JSON file
 <ol>
   <li>Used JFrame to display a user-friendly interface</li>
   <li>Used JFileChooser to allow a user to select a JSON file to be used</li>
-  <li>Parsed JSON string using JSON Object, and parsed specific item bbject from the JSON file items array</li>
+  <li>Parsed JSON string using JSON Object, and parsed specific item objects from the JSON file items array</li>
   <li>Looped through the Items Array to individually load, and add items to the page</li>
   <li>Used GridBag to store specific items in their correct positions(Row/Column)</li>
   
