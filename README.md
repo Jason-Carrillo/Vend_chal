@@ -46,13 +46,15 @@ Example: Loading a large JSON file
 <hr>
 
 <h1>Objective</h1>
-- Provide a loading option for new product lists to update.
-- Rows will be Letters.
-- Columns will be Numbers.
-- User must be able to enter a selection.
-- Machine must prompt the user for payment and amount in US dollars.
-- If user enters in payment, calculation must occur and be reported.
-- Machine must state the current state of the transaction.
-- Actions must be cleanly logged for audit purposes.
+<ul>
+  <li> Provide a loading option for new product lists to update.
+  <li> Rows will be Letters.
+  <li> Columns will be Numbers.
+  <li> User must be able to enter a selection.
+  <li> Machine must prompt the user for payment and amount in US dollars.
+  <li> If user enters in payment, calculation must occur and be reported.
+  <li> Machine must state the current state of the transaction.
+  <li> Actions must be cleanly logged for audit purposes.
+</ul>
 
 
