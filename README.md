@@ -39,3 +39,7 @@ If a number lower than the price of the item is entered, the window will display
 
 If a position that doesn't contain an item is selected an alert will tell the user there is no item at that position.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 26 55 AM" src="https://user-images.githubusercontent.com/68563183/112110342-61518180-8b78-11eb-9daa-fc6098f52836.png">
+
+Example: A Page loading a large JSON file
+<img width="794" alt="Screen Shot 2021-03-23 at 1 51 54 AM" src="https://user-images.githubusercontent.com/68563183/112111847-5bf53680-8b7a-11eb-8bff-6a2038662b2c.png">
+
