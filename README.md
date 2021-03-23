@@ -54,16 +54,16 @@ Example: Loading a large JSON file
 <hr>
 <h1>Resources</h1>
 
-JFrame [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html)</li>
-GridBag [link](https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html)</li>
-JSONObject [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonObject.html)</li>
-JSONArray [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonArray.html)</li>
-JPanel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html)</li>
-JPaneOption [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html)</li>
-JLabel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JLabel.html)</li>
-FileChooser [link](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/FileChooser.html)</li>
-BufferedReader [link](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)</li>
-Regex [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)</li>
+- JFrame [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html)</li>
+- GridBag [link](https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html)</li>
+- JSONObject [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonObject.html)</li>
+- JSONArray [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonArray.html)</li>
+- JPanel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html)</li>
+- JPaneOption [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html)</li>
+- JLabel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JLabel.html)</li>
+- FileChooser [link](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/FileChooser.html)</li>
+- BufferedReader [link](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)</li>
+- Regex [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)</li>
 
 
 <hr>
