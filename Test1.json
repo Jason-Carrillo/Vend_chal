@@ -1,0 +1,52 @@
+{
+    "config": {
+        "rows": 3,
+        "columns": 10
+    },
+    "items": [{
+        "name": "Snickers",
+        "amount": 3,
+        "price": "$1.20"
+    }, {
+        "name": "Hersheys",
+        "amount": 2,
+        "price": "$2.20"
+    }, {
+        "name": "Hersheys Almond",
+        "amount": 9,
+        "price": "$1.50"
+    }, {
+        "name": "Hersheys Special Dark",
+        "amount": 2,
+        "price": "$1.50"
+    }, {
+        "name": "Reese's",
+        "amount": 1,
+        "price": "$1.25"
+    }, {
+        "name": "Nutrageous",
+        "amount": 8,
+        "price": "$1.25"
+    }, {
+        "name": "Baby Ruth",
+        "amount": 10,
+        "price": "$2.25"
+    }, {
+        "name": "Milky way",
+        "amount": 4,
+        "price": "$1.25"
+    },{
+        "name": "Test 1",
+        "amount": 4,
+        "price": "$1.25"
+    },{
+        "name": "Test 2",
+        "amount": 4,
+        "price": "$1.25"
+    }, {
+        "name": "M&M",
+        "amount": 2,
+        "price": "$1.50"
+    }]
+}
+
