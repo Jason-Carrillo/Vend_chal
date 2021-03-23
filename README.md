@@ -50,6 +50,14 @@ If a position that doesn't contain an item is selected an alert will tell the us
 <br>
 Example: Loading a large JSON file
 <img width="794" alt="Screen Shot 2021-03-23 at 1 51 54 AM" src="https://user-images.githubusercontent.com/68563183/112111847-5bf53680-8b7a-11eb-8bff-6a2038662b2c.png">
+<hr>
+
+<h1>Setup</h1>
+<ol>
+  <li>Clone this repository</li>
+  <li>Open project</li>
+  <li>Run Main.Java</li>
+</ol>
 
 <hr>
 <h1>Resources</h1>
