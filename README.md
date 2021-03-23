@@ -54,16 +54,16 @@ Example: Loading a large JSON file
 <hr>
 <h1>Resources</h1>
 <ul>
-  <li>JFrame [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html)</li>
-  <li>GridBag [link](https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html)</li>
-  <li>JSONObject [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonObject.html)</li>
-  <li>JSONArray [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonArray.html)</li>
-  <li>JPanel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html)</li>
-  <li>JPaneOption [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html)</li>
-  <li>JLabel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JLabel.html)</li>
-  <li>FileChooser [link](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/FileChooser.html)</li>
-  <li>BufferedReader [link](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)</li>
-  <li>Regex [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)</li>
+  <li>- JFrame [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html)</li>
+  <li>- GridBag [link](https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html)</li>
+  <li>- JSONObject [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonObject.html)</li>
+  <li>- JSONArray [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonArray.html)</li>
+  <li>- JPanel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html)</li>
+  <li>- JPaneOption [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html)</li>
+  <li>- JLabel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JLabel.html)</li>
+  <li>- FileChooser [link](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/FileChooser.html)</li>
+  <li>- BufferedReader [link](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)</li>
+  <li>- Regex [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)</li>
 </ul
 
 <hr>
