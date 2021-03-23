@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 <ol>
   <li>Demo</li>
-  <li>Usage</li>
+  <li>Objective</li>
   <li>Approach</li>
 </ol
 
@@ -44,5 +44,15 @@ Example: Loading a large JSON file
 <img width="794" alt="Screen Shot 2021-03-23 at 1 51 54 AM" src="https://user-images.githubusercontent.com/68563183/112111847-5bf53680-8b7a-11eb-8bff-6a2038662b2c.png">
 
 <hr>
+
+<h1>Objective</h1>
+- Provide a loading option for new product lists to update.
+- Rows will be Letters.
+- Columns will be Numbers.
+- User must be able to enter a selection.
+- Machine must prompt the user for payment and amount in US dollars.
+- If user enters in payment, calculation must occur and be reported.
+- Machine must state the current state of the transaction.
+- Actions must be cleanly logged for audit purposes.
 
 
