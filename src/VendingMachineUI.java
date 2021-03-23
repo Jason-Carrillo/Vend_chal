@@ -25,7 +25,7 @@ public class VendingMachineUI extends JFrame {
     JFormattedTextField formatted;
     JButton btnCheckout;
     public VendingMachineUI() {
-        setTitle("Vending Machine");
+        setTitle("MS3 Vending Machine");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -57,7 +57,7 @@ public class VendingMachineUI extends JFrame {
         if (items.size() == 0)
             return;
         if (formatted.getText().isEmpty() || formatted.getText().isBlank()) {
-            JOptionPane.showMessageDialog(this, "Please enter a position to checkout an item");
+            JOptionPane.showMessageDialog(this, " Please enter a position to checkout an item");
             return;
         }
         Item item = hasPosition(formatted.getText());
@@ -200,7 +200,7 @@ public class VendingMachineUI extends JFrame {
         itemsPanel.validate();
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         gridBagConstraints.fill = GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new Insets(3, 3, 3, 3);
+        gridBagConstraints.insets = new Insets(6, 6, 6, 6);
         int itemIndex = 0;
         for (int row = 0; row < configRow; row++) {
             for (int col = 0; col < configColumn; col++) {
