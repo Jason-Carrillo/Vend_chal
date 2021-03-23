@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 <ol>
   <li>Demo</li>
+  <li>Setup</li>
   <li>Resources</li>
   <li>Objective</li>
   <li>Approach</li>
