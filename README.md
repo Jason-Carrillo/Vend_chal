@@ -7,7 +7,7 @@
   <li>Approach</li>
 </ol
   
-<h1>DEMO </h1>
+<h1>DEMas </h1>
 
 <br>
 Launching the program will open up a window that will have the option to Load new items.
