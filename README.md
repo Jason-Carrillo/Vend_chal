@@ -6,7 +6,8 @@
   <li>Objective</li>
   <li>Approach</li>
 </ol
-<h1>Demo</h1>
+  
+<h1>Demo </h1>
 
 <br>
 Launching the program will open up a window that will have the option to Load new items.
