@@ -25,7 +25,7 @@ A user can purchase an item by entering the items position (Letter for the Row, 
 A new window will prompt the user to enter money for the item.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 35 30 AM" src="https://user-images.githubusercontent.com/68563183/112110095-0f106080-8b78-11eb-8b25-283d67db17c3.png">
 
-Once Sufficient funds are entered the page will give the user the purchsed item.
+Once Sufficient funds are entered the page will give the user the purchased item.
 <img width="794" alt="Screen Shot 2021-03-23 at 1 26 35 AM" src="https://user-images.githubusercontent.com/68563183/112110291-4f6fde80-8b78-11eb-83e5-7861a4e00a45.png">
 
 The window will close, and reduce the purchased items amount available per transaction.
