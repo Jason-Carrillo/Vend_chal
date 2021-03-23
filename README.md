@@ -7,9 +7,9 @@
   <li>Approach</li>
 </ol
 
-<h2>
+<h1>
   Demo
-</h2>
+</h1>
 
 
 Launching the program will open up a window that will have the option to Load new items.
@@ -62,7 +62,7 @@ Example: Loading a large JSON file
   <li>Used JFrame to display a user-friendly interface</li>
   <li>Used JFileChooser to allow a user to select a JSON file to be used</li>
   <li>Parsed JSON string using JSON Object, and parsed specific item Object from the JSON file items array</li>
-  <li>Items are individually loaded, and added to the page</li>
+  <li>Looped through the Items Array to individually load, and add items to the page</li>
   <li>Used GridBag to store specific items in their correct positions(Row/Column)</li>
   
 </ol>
