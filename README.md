@@ -6,7 +6,7 @@
   <li>Objective</li>
   <li>Approach</li>
 </ol
-<h1>Objective</h1>
+<h1>MS3 Vending Machine</h1>
 <h1>Demo</h1>
 
 <br>
