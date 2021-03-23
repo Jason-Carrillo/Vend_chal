@@ -58,6 +58,12 @@ Example: Loading a large JSON file
 </ul>
 
 <h1>Approach</h1>
-
-
+<ol>
+  <li>Used JFrame to display a user-friendly interface</li>
+  <li>Used JFileChooser to allow a user to select a JSON file to be used</li>
+  <li>Parsed JSON string using JSON Object, and parsed specific item Object from the JSON file items array</li>
+  <li>Items are individually loaded, and added to the page</li>
+  <li>Used GridBag to store specific items in their correct positions(Row/Column)</li>
+  
+</ol>
 
