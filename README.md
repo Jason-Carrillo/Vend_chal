@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 <ol>
   <li>Demo</li>
+  <li>Resources</li>
   <li>Objective</li>
   <li>Approach</li>
 </ol
@@ -51,7 +52,21 @@ Example: Loading a large JSON file
 <img width="794" alt="Screen Shot 2021-03-23 at 1 51 54 AM" src="https://user-images.githubusercontent.com/68563183/112111847-5bf53680-8b7a-11eb-8bff-6a2038662b2c.png">
 
 <hr>
+<h1>Resources</h1>
+<ul>
+  <li>JFrame [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JFrame.html)</li>
+  <li>GridBag [link](https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html)</li>
+  <li>JSONObject [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonObject.html)</li>
+  <li>JSONArray [link](https://docs.oracle.com/javaee/7/api/javax/json/JsonArray.html)</li>
+  <li>JPanel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JPanel.html)</li>
+  <li>JPaneOption [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html)</li>
+  <li>JLabel [link](https://docs.oracle.com/javase/7/docs/api/javax/swing/JLabel.html)</li>
+  <li>FileChooser [link](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/FileChooser.html)</li>
+  <li>BufferedReader [link](https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html)</li>
+  <li>Regex [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll)</li>
+</ul
 
+<hr>
 <h1>Objective</h1>
 <ul>
   <li> Provide a loading option for new product lists to update.
