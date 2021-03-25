@@ -86,13 +86,13 @@ public class VendingMachineUI extends JFrame {
         JButton btnPurchase = new JButton("Purchase Item");
         btnPurchase.addActionListener(e -> {
             if (txtAmount.getText().isEmpty() || txtAmount.getText().isBlank()) {
-                JOptionPane.showMessageDialog(checkoutPanel, "Please enter an money to purchase the item");
+                JOptionPane.showMessageDialog(checkoutPanel, "Please insert funds to purchase item");
                 return;
             }
             double enteredAmount = Double.parseDouble(txtAmount.getText());
             double itemAmount = Double.parseDouble(item.getPrice().replaceAll("\\$", ""));
             if (enteredAmount < itemAmount) {
-                JOptionPane.showMessageDialog(checkoutPanel, "There is not enough money to purchase the selected item");
+                JOptionPane.showMessageDialog(checkoutPanel, "Insifficient funds, please insert funds to continue.");
                 return;
             }
             checkoutPanel.setVisible(false);
