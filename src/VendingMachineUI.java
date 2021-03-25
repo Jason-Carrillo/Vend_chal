@@ -90,7 +90,7 @@ public class VendingMachineUI extends JFrame {
             double enteredAmount = Double.parseDouble(txtAmount.getText());
             double itemAmount = Double.parseDouble(item.getPrice().replaceAll("\\$", ""));
             if (enteredAmount < itemAmount) {
-                JOptionPane.showMessageDialog(checkoutPanel, "Insifficient funds, please insert funds to continue.");
+                JOptionPane.showMessageDialog(checkoutPanel, "Insufficient funds, please insert funds to continue.");
                 return;
             }
             checkoutPanel.setVisible(false);
