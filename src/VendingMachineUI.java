@@ -47,7 +47,7 @@ public class VendingMachineUI extends JFrame {
         JPanel controlPanel = new JPanel();
         controlPanel.setLayout(new BorderLayout());
         controlPanel.add(btnLoad, BorderLayout.PAGE_START);
-        controlPanel.add(new JLabel("Enter the  position of the item you want to buy (e.g. <Row><Column>): "), BorderLayout.LINE_START);
+        controlPanel.add(new JLabel(" Please enter the  position of the item you want to buy (e.g. <Row><Column>): "), BorderLayout.LINE_START);
         controlPanel.add(formatted, BorderLayout.LINE_END);
         controlPanel.add(btnCheckout, BorderLayout.PAGE_END);
         add(itemsPanel, BorderLayout.CENTER);
